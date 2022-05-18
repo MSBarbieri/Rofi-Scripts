@@ -151,14 +151,21 @@ bgAlt="#24283B"
 button="#414868"
 }
 
+personal() {
+bg="#262626"
+fg="#81DD9A"
+bgAlt="#444444"
+button="#A1EA00"
+}
+
 
 case "$1" in
   "")
 echo "
 * {
-bg: #1E222A;
-bgAlt: #252931;
-fg: #61AFEF;
+bg=#262626;
+fg=#81DD9A;
+bgAlt=#444444;
 button: @bgAlt;
 background-color: @bg;
 text-color: @fg;
@@ -167,7 +174,7 @@ text-color: @fg;
 configuration {
   font: \""$uifont"\";
 }
-" > style.rasi
+" > $HOME/.config/rofi/Themes/style.rasi
 help
   ;;
   *)
@@ -185,7 +192,7 @@ text-color: @fg;
 configuration {
   font: \""$uifont"\";
 }
-" > style.rasi
+" > $HOME/.config/rofi/Themes/style.rasi
   ;;
 esac
 
