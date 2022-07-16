@@ -12,11 +12,11 @@ configuration {
   display-drun:		"Apps";
   display-window:	"Windows";
   display-filebrowser:	"Files";
-
-filebrowser {
-  directories-first:	true;
-  sorting-method:	"name";
-  }
+  font: "FiraCode Nerd Font 13";
+  filebrowser {
+    directories-first:	true;
+    sorting-method:	"name";
+    }
 }
 
 @theme "/dev/null"
